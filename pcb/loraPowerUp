@@ -1,0 +1,7 @@
+Qty,partname,description,lib
+0,"CONN_01X07","Connector, single row, 01x07","conn"
+0,"CONN_01X08","Connector, single row, 01x08","conn"
+0,"CONN_01X13","Connector, single row, 01x13","conn"
+0,"IRF9540N","-100V Vds, -23A Id, HEXFET P-Channel MOSFET, TO-220","transistors"
+0,"Q_NPN_BCE","Transistor NPN (general)","device"
+0,"R","Resistor","device"

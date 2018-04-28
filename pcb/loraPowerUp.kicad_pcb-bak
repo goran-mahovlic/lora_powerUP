@@ -3,7 +3,7 @@
   (general
     (links 37)
     (no_connects 0)
-    (area 0 0 0 0)
+    (area 139.424999 73.424999 166.575001 102.075001)
     (thickness 1.6)
     (drawings 4)
     (tracks 162)
@@ -33,7 +33,7 @@
     (46 B.CrtYd user hide)
     (47 F.CrtYd user hide)
     (48 B.Fab user hide)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerber/))
   )
 
   (net 0 "")
@@ -550,7 +550,7 @@
     )
   )
 
-  (module pcb:lora (layer F.Cu) (tedit 5AE46877) (tstamp 5AE46768)
+  (module pcb:lora (layer F.Cu) (tedit 5AE472D9) (tstamp 5AE46768)
     (at 153 77.5)
     (descr "Molex PicoBlade, single row, top entry type, surface mount, PN:53398-1371")
     (tags "connector molex picoblade smt")
@@ -559,7 +559,7 @@
     (fp_text reference P3 (at 0 -3.25) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value LORA (at 0 0.5) (layer F.Fab)
+    (fp_text value LORA (at 0 0.5) (layer F.Adhes)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -7.9 -1.225) (end -7.5 -0.425) (layer F.Fab) (width 0.15))

@@ -254,50 +254,15 @@ Wire Wire Line
 Wire Wire Line
 	3150 2150 3150 2000
 Connection ~ 3150 2000
-$Comp
-L GND #PWR01
-U 1 1 5AE44DA6
-P 3150 2550
-F 0 "#PWR01" H 3150 2300 50  0001 C CNN
-F 1 "GND" H 3150 2400 50  0000 C CNN
-F 2 "" H 3150 2550 50  0000 C CNN
-F 3 "" H 3150 2550 50  0000 C CNN
-	1    3150 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3150 2550 3150 2450
-$Comp
-L GND #PWR02
-U 1 1 5AE44FD3
-P 3550 2550
-F 0 "#PWR02" H 3550 2300 50  0001 C CNN
-F 1 "GND" H 3550 2400 50  0000 C CNN
-F 2 "" H 3550 2550 50  0000 C CNN
-F 3 "" H 3550 2550 50  0000 C CNN
-	1    3550 2550
-	1    0    0    -1  
-$EndComp
+	3150 2450 3150 2700
 Wire Wire Line
 	3550 1450 3550 1800
 Wire Wire Line
 	3550 1600 3800 1600
 Connection ~ 3550 1600
-$Comp
-L VCC #PWR03
-U 1 1 5AE4543B
-P 4500 850
-F 0 "#PWR03" H 4500 700 50  0001 C CNN
-F 1 "VCC" H 4500 1000 50  0000 C CNN
-F 2 "" H 4500 850 50  0000 C CNN
-F 3 "" H 4500 850 50  0000 C CNN
-	1    4500 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 1150 3550 900 
-Wire Wire Line
-	3550 900  4500 900 
 Text GLabel 4500 2000 3    60   Input ~ 0
 LoRaVCC
 $Comp
@@ -336,17 +301,6 @@ Text GLabel 6750 2600 0    60   Input ~ 0
 DIO4
 Text GLabel 7550 2200 0    60   Input ~ 0
 DIO5
-$Comp
-L VCC #PWR04
-U 1 1 5AE47F33
-P 7550 2100
-F 0 "#PWR04" H 7550 1950 50  0001 C CNN
-F 1 "VCC" H 7550 2250 50  0000 C CNN
-F 2 "" H 7550 2100 50  0000 C CNN
-F 3 "" H 7550 2100 50  0000 C CNN
-	1    7550 2100
-	0    -1   -1   0   
-$EndComp
 Text GLabel 6750 2700 0    60   Input ~ 0
 GND
 Text GLabel 7550 2300 0    60   Input ~ 0
@@ -386,20 +340,30 @@ Wire Wire Line
 Wire Wire Line
 	6750 2700 6850 2700
 Wire Wire Line
-	7550 2100 7650 2100
+	7450 2100 7650 2100
 Connection ~ 4100 900 
 Wire Wire Line
-	4500 850  4500 2000
-Wire Wire Line
 	4100 900  4100 1350
-Connection ~ 4500 900 
 Wire Wire Line
 	4100 1750 4100 1900
 Wire Wire Line
-	4100 1900 4500 1900
-Connection ~ 4500 1900
-Wire Wire Line
 	2550 2000 2700 2000
 Wire Wire Line
-	3550 2550 3550 2200
+	3550 2200 3550 2650
+Wire Wire Line
+	4500 1900 4500 2000
+Wire Wire Line
+	4100 1900 4500 1900
+Wire Wire Line
+	3550 900  4500 900 
+Wire Wire Line
+	4500 900  4500 750 
+Text GLabel 4500 750  1    60   Input ~ 0
+VCC
+Text GLabel 3550 2650 3    60   Input ~ 0
+GND
+Text GLabel 7450 2100 0    60   Input ~ 0
+VCC
+Text GLabel 3150 2700 3    60   Input ~ 0
+GND
 $EndSCHEMATC
